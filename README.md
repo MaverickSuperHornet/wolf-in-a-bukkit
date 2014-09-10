@@ -15,4 +15,10 @@ to become gpl as well, unless it has been added by a copyright holder who releas
 
 Now if ALL the copyright holders of Bukkit would pitch in and add the original code this would be done really soon and we can go back to making plugins.
 
+For now, coding conventions, you can try to use bukkit style or the style I am using.
+For the rest no tabs but idents of 4 spaces.
+
+Its now more about speed and functionality than pretty and easy to spot the differences.
+We can smooth things out later, its not that many files.
+
 Thank you for reading and possibly helping out.
