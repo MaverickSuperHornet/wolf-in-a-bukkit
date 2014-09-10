@@ -38,11 +38,7 @@ public enum ChatColor {
     private final String result;
     private final static Map<Integer, ChatColor> COLORMAP_ID = Maps.newHashMap();
     private final static Map<Character, ChatColor> COLORMAP_CHAR = Maps.newHashMap();    
-    static {
-        for (ChatColor color : values()) {
-            COLORMAP_ID.put(color.intCode, color);
-            COLORMAP_CHAR.put(color.code, color);
-        }
+
     // init when hasformatting isnt provided. defaults to false
     private ChatColor(char charcode, int intcode) 
         {
@@ -54,6 +50,11 @@ public enum ChatColor {
         this.colorInt = intcode;
         this.hasFormat = hasFormat;
         this.result = new String(new char[] {COLOR_CHAR, charcode});
+        }
+    static {
+        for (ChatColor color : values()) {
+            COLORMAP_ID.put(color.colorInt, color);
+            COLORMAP_CHAR.put(color.colorChar, color);
         }
     // public stuff
     public static final char COLOR_CHAR = '\u00A7';
