@@ -51,10 +51,13 @@ public enum ChatColor {
         this.hasFormat = hasFormat;
         this.result = new String(new char[] {COLOR_CHAR, charcode});
         }
-    static {
-        for (ChatColor color : values()) {
+    static 
+        {
+        for(ChatColor color : values()) 
+            {
             COLORMAP_ID.put(color.colorInt, color);
             COLORMAP_CHAR.put(color.colorChar, color);
+            }
         }
     // public stuff
     public static final char COLOR_CHAR = '\u00A7';
@@ -119,7 +122,7 @@ public enum ChatColor {
         lastColorCharIndex = text.lastIndexOf(this.COLOR_CHAR);        
         if(lastColorCharIndex < text.length() - 1)
             {
-            ChatColor color = this.getByChar(text.charAt(lastColorCharIndex + 1);
+            ChatColor color = this.getByChar(text.charAt(lastColorCharIndex + 1));
             if(color != null)
                 {
                 result = color.toString() + result;

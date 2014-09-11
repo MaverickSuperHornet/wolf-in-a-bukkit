@@ -1,4 +1,4 @@
-package org.wolfinabukkit
+package org.wolfinabukkit;
 
 import java.util.Date;
 import java.util.Set;

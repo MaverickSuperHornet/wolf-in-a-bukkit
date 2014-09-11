@@ -39,7 +39,7 @@ public enum Art
     private int width;
     private int height;
     private static final HashMap<String,Art> NAME_MAP = Maps.newHashMap();
-    private static final HashMap<Integer,ART> ID_MAP = Maps.newHashMap();
+    private static final HashMap<Integer,Art> ID_MAP = Maps.newHashMap();
     
     static
         {

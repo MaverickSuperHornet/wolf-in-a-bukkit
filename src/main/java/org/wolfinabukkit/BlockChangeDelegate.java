@@ -1,4 +1,4 @@
-package org.wolfinabukkit
+package org.wolfinabukkit;
 
 // need new comments here too, who volunteers to write?
 public interface BlockChangeDelegate
@@ -15,5 +15,5 @@ public interface BlockChangeDelegate
     @Deprecated
     public boolean setTypeIdAndData(int Xaxis, int Yaxis, int Zaxis, int newBlockID, int BlockData);
     @Deprecated
-    public int getTypeId(int Xaxis, int Yaxis, int Zaxis)
+    public int getTypeId(int Xaxis, int Yaxis, int Zaxis);
     }

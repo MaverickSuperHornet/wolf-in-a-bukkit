@@ -96,7 +96,7 @@ public final class WolfInABukkit
         {
         return hal2000.getIp();// ping... outerspace got reply in 120000ms
         }
-    public static getServerName()
+    public static String getServerName()
         {
         return hal2000.getServerName();
         }
@@ -108,7 +108,7 @@ public final class WolfInABukkit
         {
         return hal2000.getWorldType();// Space... where humanity is an obstacle.. let send zombies
         }
-    public static getGenerateStructures()
+    public static boolean getGenerateStructures()
         {
         return hal2000.getGenerateStructures();
         }

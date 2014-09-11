@@ -21,4 +21,6 @@ For the rest no tabs but idents of 4 spaces.
 Its now more about speed and functionality than pretty and easy to spot the differences.
 We can smooth things out later, its not that many files.
 
+To compile use haven. Just run mvn clean install from the same directory as this readme is in.
+
 Thank you for reading and possibly helping out.

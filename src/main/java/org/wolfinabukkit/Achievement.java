@@ -1,4 +1,4 @@
-package org.wolfinabukkit
+package org.wolfinabukkit;
 
 /*
  * This represents the default achievements that players can earn or can be given to
