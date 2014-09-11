@@ -30,8 +30,8 @@ public enum CoalType
         return coal;
         }
     @Deprecated
-    public static CoalType getByData(final byte data) 
+    public static CoalType getByData(final byte coal) 
         {
-        return BY_DATA.get(data);
+        return COALMAP_DATA.get(coal);
         }
     }
