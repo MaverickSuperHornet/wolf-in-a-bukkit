@@ -12,23 +12,23 @@ import com.google.common.collect.ImmutableMap;
 public final class Color implements ConfigurationSerializable {
 
     private static final int COLOR_BIT = 0xff;// also doubles as max rgb value
-    public static final Color WHITE = fromRGB(0xFFFFFF);
-    public static final Color SILVER = fromRGB(0xC0C0C0);
-    public static final Color GRAY = fromRGB(0x808080);
-    public static final Color BLACK = fromRGB(0x000000);
-    public static final Color RED = fromRGB(0xFF0000);
-    public static final Color MAROON = fromRGB(0x800000);
-    public static final Color YELLOW = fromRGB(0xFFFF00);
-    public static final Color OLIVE = fromRGB(0x808000);
-    public static final Color LIME = fromRGB(0x00FF00);
-    public static final Color GREEN = fromRGB(0x008000);
-    public static final Color AQUA = fromRGB(0x00FFFF);
-    public static final Color TEAL = fromRGB(0x008080);
-    public static final Color BLUE = fromRGB(0x0000FF);
-    public static final Color NAVY = fromRGB(0x000080);
-    public static final Color FUCHSIA = fromRGB(0xFF00FF);
-    public static final Color PURPLE = fromRGB(0x800080);
-    public static final Color ORANGE = fromRGB(0xFFA500);
+    public static final Color WHITE = fromRGB(255,255,255);
+    public static final Color SILVER = fromRGB(192,192,192);
+    public static final Color GRAY = fromRGB(128,128,128);
+    public static final Color BLACK = fromRGB(0,0,0);
+    public static final Color RED = fromRGB(255,0,0);
+    public static final Color MAROON = fromRGB(128,0,0);
+    public static final Color YELLOW = fromRGB(255,255,0);
+    public static final Color OLIVE = fromRGB(128,128,0);
+    public static final Color LIME = fromRGB(0,255,0);
+    public static final Color GREEN = fromRGB(0,128,0);
+    public static final Color AQUA = fromRGB(0,255,255);
+    public static final Color TEAL = fromRGB(0,128,128);
+    public static final Color BLUE = fromRGB(0,0,255);
+    public static final Color NAVY = fromRGB(0,0,128);
+    public static final Color FUCHSIA = fromRGB(255,0,255);
+    public static final Color PURPLE = fromRGB(128,0,128);
+    public static final Color ORANGE = fromRGB(255,165,0);
 
     private final byte r;
     private final byte g;
@@ -190,6 +190,6 @@ public final class Color implements ConfigurationSerializable {
 
     @Override
     public String toString() {
-        return "Color : [rgb 0x" + Integer.toHexString(asRGB()).toUpperCase() + "]";
+        return "Color : [rgb hex 0x" + Integer.toHexString(asRGB()).toUpperCase() + "]";
     }
 }
