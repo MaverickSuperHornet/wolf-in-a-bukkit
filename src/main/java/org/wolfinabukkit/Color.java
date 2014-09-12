@@ -49,7 +49,7 @@ public final class Color implements ConfigurationSerializable {
         this.b = (byte) b;
     }
 
-    private static int asInt(String find, Map<String, Object> target) {
+    private static int makeInt(String find, Map<String, Object> target) {
         Object value = target.get(find);
         int result = 0;
         if (value == null) {
@@ -175,11 +175,17 @@ public final class Color implements ConfigurationSerializable {
     }
 
     public Map<String, Object> serialize() {
-        return ImmutableMap.<String, Object>of("RED", this.getRed(), "BLUE", this.getBlue(), "GREEN", this.getGreen());
+        int red = this.getRed();
+        int blue = this.getBlue();
+        int green = this.getGreen();
+        return ImmutableMap.<String, Object>of("RED", red, "BLUE", blue, "GREEN", green);
     }
 
     public static Color deserialize(Map<String, Object> target) {
-        return fromRGB(asInt("RED", target), asInt("GREEN", target), asInt("BLUE", target));
+        int red = makeInt("RED", target);
+        int green = makeInt("GREEN", target);
+        int blue = makeInt("BLUE", target);
+        return fromRGB(red,green ,blue );
     }
 
     @Override
