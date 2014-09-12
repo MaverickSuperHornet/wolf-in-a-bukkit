@@ -190,6 +190,6 @@ public final class Color implements ConfigurationSerializable {
 
     @Override
     public String toString() {
-        return "Color : [rgb 0x" + Integer.toHexString(getRed()).toUpperCase() + Integer.toHexString(getGreen()).toUpperCase() + Integer.toHexString(getBlue()).toUpperCase() + "]";
+        return "Color : [rgb 0x" + Integer.toHexString(asRGB()).toUpperCase() + "]";
     }
 }
