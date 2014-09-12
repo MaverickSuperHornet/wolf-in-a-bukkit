@@ -31,4 +31,4 @@
 .idea/
 
 #bukkit
-src/main/java/org/gplbukkit
+/src/main/java/org/gplbukkit
