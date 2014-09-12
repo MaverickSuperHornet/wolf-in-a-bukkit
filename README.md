@@ -1,25 +1,21 @@
 wolf-in-a-bukkit
 ================
 
-Wolf in a bukkit is intended to be an LGPL replacement for the GPL Bukkit, to allow programs as craftbukkit and spigot to continue to exist.
+Wolf in a bukkit is intended to be an X11/MIT interface for the GPL Bukkit, to allow programs as craftbukkit and spigot to continue to exist.
 
-To do this we will make a program that has same classes and method names to allow  compatiblity
-but the code that handles the compatiblity will be different and original.
-If any of the writers of the code of the current bukkit api wish to add their code to 
-this project to also release that code under LGPLv3 that would be MUCH appriciated. 
-Only copyright holders can add original bukkit api material to the wolf in a bukkit repository.
+For this purpose we will make wolf in a bukkit a shell interfacing with the bukkit api.
+For this purpose the bukkit api has been modified and uploaded to the repository
+https://github.com/tschallacka/GPLBUKKIT
 
-NO code from the gpl bukkit may be used in this project as it will force this project
-to become GPL as well, unless it has been added by the copyright holder who releases their added code under LGPLv3
+The intention is you can take the bukkit repo you like, change the classpath to gplbukkit instead of bukkit.
+On a linux distro you can use the shell script rename_bukkit.sh to change the classpath in the org/bukkit directory files
+so you can place them in a folder org/gplbukkit to which wolf in a bukkit will look to.
 
-Now if ALL the copyright holders of Bukkit would pitch in and add the original code this would be done really soon and we can go back to making plugins.
+Wolf in a bukkit will provide its own shell to interface with the bukkit api code. Wolf in a bukkit will not be shipped with the gplbukkit api.
+GPLBukkit api will have to be downloaded seperately and installed seperately.
 
-For now, coding conventions, you can try to use bukkit style or the style I am using.
-For the rest no tabs but idents of 4 spaces.
+This x11/MIT licensed interface can be used with craftbukkit and shipped with craftbukkit, as long as the bukkit api will be downloaded seperately.
 
-It's now more about speed and functionality than pretty and easy to spot the differences.
-We can smooth things out later, its not that many files.
+Please look on the reddit for discussion and instructions if you wish to contribute.
+http://www.reddit.com/r/wolf_in_a_bukkit/
 
-To compile use maven. Just run mvn clean install from the same directory as this readme is in.
-
-Thank you for reading and possibly helping out.
