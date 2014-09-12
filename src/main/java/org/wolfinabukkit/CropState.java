@@ -15,10 +15,16 @@ public enum CropState {
     RIPE(0x7);
     private final byte crop;
     private final static Map<Byte, CropState> CROP_MAP = Maps.newHashMap();
-
+    
     private CropState(final int seed) {
         this.crop = (byte)seed;
     }
+    static {
+        for (CropState growth : values()) {
+            CROP_MAP.put(growth.getData(), growth);
+        }
+    }
+    // yea... kinda don't use this.
     @Deprecated
     public byte getData() {
         return this.crop;
@@ -28,9 +34,5 @@ public enum CropState {
         return CROP_MAP.get(whatIsThisSeed);
     }
 
-    static {
-        for (CropState growth : values()) {
-            CROP_MAP.put(growth.getData(), growth);
-        }
-    }
+    
 }
