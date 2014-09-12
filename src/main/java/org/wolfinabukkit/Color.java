@@ -73,14 +73,14 @@ public final class Color implements ConfigurationSerializable {
 
     public static Color fromRGB(int rgb) throws IllegalArgumentException {
         if ((rgb >> 0x18) != 0) {
-            return fromRGB(rgb >> 0xf & COLOR_BIT, rgb >> 0x8 & COLOR_BIT, rgb & COLOR_BIT);
+            return fromRGB(rgb >> 0x10 & COLOR_BIT, rgb >> 0x8 & COLOR_BIT, rgb & COLOR_BIT);
         }
         throw new IllegalArgumentException("Invalid RGB color data received: "+ rgb);
     }
 
     public static Color fromBGR(int bgr) throws IllegalArgumentException {
         if((bgr >> 0x18 != 0)) {
-            return fromBGR(bgr >> 0xf & COLOR_BIT, bgr >> 0x8 & COLOR_BIT, bgr & COLOR_BIT);
+            return fromBGR(bgr >> 0x10 & COLOR_BIT, bgr >> 0x8 & COLOR_BIT, bgr & COLOR_BIT);
         }
         throw new IllegalArgumentException("Invalid BGR color data received: "+ BGR);
     }
@@ -112,15 +112,15 @@ public final class Color implements ConfigurationSerializable {
     }
 
     public int asRGB() {
-        int result = getRed() << 16;
-        result = result | getGreen() << 8;
+        int result = getRed() << 0x10;
+        result = result | getGreen() << 0x8;
         result = result | getBlue();
         return result;
     }
 
     public int asBGR() {
-        int result = getBlue() << 16;
-        result = result | getGreen() << 8;
+        int result = getBlue() << 0x10;
+        result = result | getGreen() << 0x8;
         result = result | getRed();
     }
 
