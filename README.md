@@ -22,7 +22,6 @@ In the code add commentary where you based the idea off. File name in craftbukki
 We need a paper trail to show we DID NOT LOOK INTO BUKKIT for functionality.
 
 I realise this is really a handicapped project but it is doable. Better than rewriting an api from scratch.
-Glowstone is a miss because even they cannot make this work due to the same limitations. 
 
 To make the situation clear: ANYTHING USING BUKKIT API CANNOT BE USED WITH ANYTHING LESS THAN GPLv3 SOFTWARE!
 
