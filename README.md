@@ -1,20 +1,32 @@
 wolf-in-a-bukkit
 ================
 
-Wolf in a bukkit is intended to be an X11/MIT interface for the GPL Bukkit, to allow programs as craftbukkit and spigot to continue to exist.
+Wolf in a bukkit is intended to be an X11/MIT API for the lGPL CraftBukkit, to allow programs as craftbukkit and spigot and cauldron to continue to exist and be downloaded.
 
-For this purpose we will make wolf in a bukkit a shell interfacing with the bukkit api.
-For this purpose the bukkit api has been modified and uploaded to the repository
-https://github.com/tschallacka/GPLBUKKIT
+This package will be REVERSE ENGINERED in functionality from the craftbukkit code.
 
-The intention is you can take the bukkit repo you like, change the classpath to gplbukkit instead of bukkit.
-On a linux distro you can use the shell script rename_bukkit.sh to change the classpath in the org/bukkit directory files
-so you can place them in a folder org/gplbukkit to which wolf in a bukkit will look to.
+IT IS FORBIDDEN TO LOOK INTO THE BUKKIT API FOR CODE OR HOW IT WORKS!
 
-Wolf in a bukkit will provide its own shell to interface with the bukkit api code. Wolf in a bukkit will not be shipped with the gplbukkit api.
-GPLBukkit api will have to be downloaded seperately and installed seperately.
+Any code re-used from the bukkit code will be deleted!
 
-This x11/MIT licensed interface can be used with craftbukkit and shipped with craftbukkit, as long as the bukkit api will be downloaded seperately.
+YOU CANNOT BASE IDEAS OF FUNCTIONALITY OFF BUKKIT API CODE!
+
+This is also a derived work which falls under copyright law.
+
+You are only allowed to look into craftbukkit AND plugins to see how it is supposed to work.
+We will have to add new functionalities we might have missed based on bug reports.
+
+PLEASE ADHERE TO THESE RULES! This is the only way we can make this work.
+
+In the code add commentary where you based the idea off. File name in craftbukkit or plugin and line number reference mandatory OR bug report!.
+We need a paper trail to show we DID NOT LOOK INTO BUKKIT for functionality.
+
+I realise this is really a handicapped project but it is doable. Better than rewriting an api from scratch.
+Glowstone is a miss because even they cannot make this work due to the same limitations. 
+
+To make the situation clear: ANYTHING USING BUKKIT API CANNOT BE USED WITH ANYTHING LESS THAN GPLv3 SOFTWARE!
+
+okay, so we have this clear, lets get cracking and make sure plugins like dynmap, essentials and stuff get a headway.
 
 Please look on the reddit for discussion and instructions if you wish to contribute.
 http://www.reddit.com/r/wolf_in_a_bukkit/
