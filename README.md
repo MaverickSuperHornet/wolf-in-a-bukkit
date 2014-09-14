@@ -20,6 +20,10 @@ PLEASE ADHERE TO THESE RULES! This is the only way we can make this work.
 
 In the code add commentary where you based the idea off. File name in craftbukkit or plugin and line number reference mandatory OR bug report!.
 We need a paper trail to show we DID NOT LOOK INTO BUKKIT for functionality.
+Also make notes of your reasoning you have behind the functionality. This does not have to be long but more in the line like:
+    x.java implented yyy, interface yyy needed.
+    x.java has a variable that takes an int from a method called getGreen() from Color object; public int getGreen() needed in Color object
+
 
 I realise this is really a handicapped project but it is doable. Better than rewriting an api from scratch.
 
