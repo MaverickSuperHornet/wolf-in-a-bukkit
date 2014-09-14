@@ -1,7 +1,7 @@
-wolf-in-a-bukkit
+Wolf-in-a-bukkit
 ================
 
-Wolf in a bukkit is intended to be an X11/MIT API for the lGPL CraftBukkit, to allow programs as craftbukkit and spigot and cauldron to continue to exist and be downloaded.
+Wolf in a bukkit is intended to be an X11/MIT API for the lGPL CraftBukkit, to allow programs as Craftbukkit, Spigot and Cauldron to continue to exist and be downloaded.
 
 This package will be REVERSE ENGINERED in functionality from the craftbukkit code.
 
