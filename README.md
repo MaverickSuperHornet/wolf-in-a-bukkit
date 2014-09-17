@@ -3,29 +3,29 @@ Wolf-in-a-bukkit
 
 Wolf in a bukkit is intended to be an X11/MIT API for the lGPL CraftBukkit, to allow programs as Craftbukkit, Spigot and Cauldron to continue to exist and be downloaded.
 
-This package will be REVERSE ENGINERED in functionality from the craftbukkit code.
+This package will be REVERSE ENGINERED in functionality from the Craftbukkit code.
 
 IT IS FORBIDDEN TO LOOK INTO THE BUKKIT API FOR CODE OR HOW IT WORKS!
 
-Any code re-used from the bukkit code will be deleted!
+Any code re-used from the Bukkit code will be deleted!
 
 YOU CANNOT BASE IDEAS OF FUNCTIONALITY OFF BUKKIT API CODE!
 
-This is also a derived work which falls under copyright law.
+This is also a derived work which falls under Copyright law.
 
-You are only allowed to look into craftbukkit AND plugins to see how it is supposed to work.
+You are only allowed to look into Craftbukkit AND plugins to see how it is supposed to work.
 We will have to add new functionalities we might have missed based on bug reports.
 
 PLEASE ADHERE TO THESE RULES! This is the only way we can make this work.
 
-In the code add commentary where you based the idea off. File name in craftbukkit or plugin and line number reference mandatory OR bug report!.
+In the code add commentary where you based the idea off. File name in Craftbukkit or plugin and line number reference mandatory OR bug report!.
 We need a paper trail to show we DID NOT LOOK INTO BUKKIT for functionality.
 Also make notes of your reasoning you have behind the functionality. This does not have to be long but more in the line like:
     x.java implented yyy, interface yyy needed.
     x.java has a variable that takes an int from a method called getGreen() from Color object; public int getGreen() needed in Color object
 
 
-I realise this is really a handicapped project but it is doable. Better than rewriting an api from scratch.
+I realise this is really a handicapped project but it is doable. Better than rewriting an API from scratch.
 
 To make the situation clear: ANYTHING USING BUKKIT API CANNOT BE USED WITH ANYTHING LESS THAN GPLv3 SOFTWARE!
 
