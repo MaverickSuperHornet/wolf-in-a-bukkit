@@ -1,9 +1,9 @@
 Wolf-in-a-bukkit
 ================
 
-Wolf in a bukkit is intended to be an X11/MIT API for the lGPL CraftBukkit, to allow programs as Craftbukkit, Spigot and Cauldron to continue to exist and be downloaded.
+Wolf in a bukkit is intended to be an X11/MIT API for the LGPL CraftBukkit, to allow programs as CraftBukkit, Spigot and Cauldron to continue to exist and be downloaded.
 
-This package will be REVERSE ENGINERED in functionality from the Craftbukkit code.
+This package will be REVERSE ENGINERED in functionality from the CraftBukkit code.
 
 IT IS FORBIDDEN TO LOOK INTO THE BUKKIT API FOR CODE OR HOW IT WORKS!
 
@@ -21,7 +21,7 @@ PLEASE ADHERE TO THESE RULES! This is the only way we can make this work.
 In the code add commentary where you based the idea off. File name in Craftbukkit or plugin and line number reference mandatory OR bug report!.
 We need a paper trail to show we DID NOT LOOK INTO BUKKIT for functionality.
 Also make notes of your reasoning you have behind the functionality. This does not have to be long but more in the line like:
-    x.java implented yyy, interface yyy needed.
+    x.java implemented yyy, interface yyy needed.
     x.java has a variable that takes an int from a method called getGreen() from Color object; public int getGreen() needed in Color object
 
 
@@ -29,7 +29,7 @@ I realise this is really a handicapped project but it is doable. Better than rew
 
 To make the situation clear: ANYTHING USING BUKKIT API CANNOT BE USED WITH ANYTHING LESS THAN GPLv3 SOFTWARE!
 
-okay, so we have this clear, lets get cracking and make sure plugins like dynmap, essentials and stuff get a headway.
+Okay, so we have this clear, lets get cracking and make sure plugins like dynmap, essentials and stuff get a headway.
 
 This project is NAMED wolf in a bukkit in honour of wesley wolve, the biggest dickhead in moral history who willfully broke his own license for years and then started nagging about it.
 Files will be in the org.bukkit package to ensure maximum compatiblity with existing plugins.
