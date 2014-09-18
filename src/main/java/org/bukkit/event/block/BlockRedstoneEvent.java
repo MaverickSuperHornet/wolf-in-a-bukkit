@@ -12,14 +12,33 @@ import org.bukkit.block.Block;
 
 public class BlockRedstoneEvent extends Event {
     private Block block;
-    private int power1;
-    private int power2;
-    // no adequate names yet for power1 and two as function is yet undetermined.
-    // since they are internal naming doesn't matter that much.
-    public BlockRedstonevent(Block block, int power1, int power2) {
+    /* 16/09/2015 Tschallacka no adequate names yet for power1 and two as function is yet undetermined.
+     since they are internal naming doesn't matter that much.    
+    18/09/2015 renamed them to old and current as per
+        net.minecraft.server.BlockButtonAbstract line 152
+    preceding lines indicate a test if the power will be 15 or 0
+    wether test passes or fails.
+    */
+    private int old;
+    private int current;
+    
+    public BlockRedstonevent(Block block, int old, int current) {
         this.block = block;
-        this.power1 = power1;
-        this.power2 = power2;
+        this.old = old;
+        this.current = current;
     }
+    /* 18/09/2015 Tschallacka function getnewcurrent as 
+        net.minecraft.server.BlockButtonAbstract line 155
+        calls this to test if the redstone current is bigger
+        than 15. No idea as of yet what to return except an integer value
+        of 0 - 15 to indicate redstone signal strength it seems.
+        Theory: It takes the current redstone signal strength from
+                block then adds button redstone power to it and
+                returns the sum.
+    */
+        public int getNewCurrent()
+            {
+            return 0;
+            }
     
 }
