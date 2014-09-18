@@ -31,7 +31,6 @@ To make the situation clear: ANYTHING USING BUKKIT API CANNOT BE USED WITH ANYTH
 
 Okay, so we have this clear, lets get cracking and make sure plugins like dynmap, essentials and stuff get a headway.
 
-This project is NAMED wolf in a bukkit in honour of wesley wolve, the biggest dickhead in moral history who willfully broke his own license for years and then started nagging about it.
 Files will be in the org.bukkit package to ensure maximum compatiblity with existing plugins.
 We will try to re-create the hooks and classes to the best of our abilities.
 
