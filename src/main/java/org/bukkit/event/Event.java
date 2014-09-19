@@ -25,7 +25,7 @@ public class Event{
 	 * @return the event's name
 	 */
 	public String getEventName() {
-		if(name == null) return getClass().getSimpleName();
+		if(eventName == null) return getClass().getSimpleName();
 		else return eventName;
 	}
 	
