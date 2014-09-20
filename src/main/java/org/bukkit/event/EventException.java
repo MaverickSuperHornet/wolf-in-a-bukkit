@@ -1,8 +1,11 @@
 package org.bukkit.event;
+/* 20/09/2014 TheKiwi5000
+ * Based on http://jd.bukkit.org/dev/apidocs/org/bukkit/event/EventException.html
+ * Recreated EventException.java from JD above
+ */
 /**
  * The class representing event exception
  * 
- *
  */
 public class EventException extends Exception{
 	

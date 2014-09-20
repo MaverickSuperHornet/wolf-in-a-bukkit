@@ -1,7 +1,11 @@
 package org.bukkit.event;
-
+/* 20/09/2014 TheKiwi5000
+ * Based on: http://jd.bukkit.org/dev/apidocs/org/bukkit/event/Event.html
+ * and http://jd.bukkit.org/dev/apidocs/org/bukkit/event/Event.Result.html
+ * Recreating Event.java from JD linked above.
+ */
 public class Event{
-	private boolean isAsynchronous;
+	private boolean isAsynchronous; //Some events are asynchronous, so there had to be a boolean to store if they are async.
 	private String eventName;
 	
 	
@@ -25,11 +29,11 @@ public class Event{
 	 * @return the event's name
 	 */
 	public String getEventName() {
-		if(eventName == null) return getClass().getSimpleName();
+		if(eventName == null) return getClass().getSimpleName(); //make sure there won't be NPE's anywhere
 		else return eventName;
 	}
 	
-	//TODO public abstract HandlerList getHandlers();
+	//TODO public abstract HandlerList getHandlers(); - no idea how to make this.
 	
 	public enum Result{
 		/**
