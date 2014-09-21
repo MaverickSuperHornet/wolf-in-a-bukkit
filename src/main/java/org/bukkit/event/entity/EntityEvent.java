@@ -8,23 +8,25 @@ import org.bukkit.event.Event;
  * The entity-related event class
  */
 public abstract class EntityEvent extends Event {
-	protected Entity what;
-	/**
-	 * Constructs entity-related event
-	 */
-	public EntityEvent(final Entity what) {
+
+    protected Entity what;
+
+    /**
+     * Constructs entity-related event
+     */
+    public EntityEvent(final Entity what) {
 		this.what = what;
 	}
-	
-	/**
-	 * Returns event's entity
-	 * @return The entity involved in the event
-	 */
-	public Entity getEntity() {
+
+    /**
+     * Returns event's entity
+     * @return The entity involved in the event
+     */
+    public Entity getEntity() {
 		return what;
 	}
-	
-	public EntityType getEntityType() {
+
+    public EntityType getEntityType() {
 		return what.getType();
 	}
 }

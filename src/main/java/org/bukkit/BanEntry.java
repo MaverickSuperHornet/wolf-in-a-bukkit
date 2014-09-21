@@ -12,13 +12,22 @@ import java.util.Date;
 public interface BanEntry {
     // created functions according to listed functions in javadocs
     public Date getCreated();
-    public Date getExpiration(); 
-    public String getReason(); 
-    public String getSource() ;
-    public String getTarget(); 
+
+    public Date getExpiration();
+
+    public String getReason();
+
+    public String getSource();
+
+    public String getTarget();
+
     public void save();
-    public void setCreated(Date created); 
-    public void setExpiration(Date expiration) ;
+
+    public void setCreated(Date created);
+
+    public void setExpiration(Date expiration);
+
     public void setReason(String reason);
+
     public void setSource(String source);
-    }
+}
