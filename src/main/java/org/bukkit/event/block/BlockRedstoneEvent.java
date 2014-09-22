@@ -1,6 +1,7 @@
 package org.bukkit.event.block;
 
 import org.bukkit.block.Block;
+
 /* - Tschallacka 16/09/2015
     Found reference to this in net.minecraft.server.BlockBloodStone line 3
     Assuming it extends otherwise untill we find more.
@@ -9,8 +10,8 @@ import org.bukkit.block.Block;
     The second and third one is an int according for the power strength according to line 20 in BlockBloodStone.java
 
 */
-
 public class BlockRedstoneEvent extends Event {
+
     private Block block;
     /* 16/09/2015 Tschallacka no adequate names yet for power1 and two as function is yet undetermined.
      since they are internal naming doesn't matter that much.    
@@ -21,12 +22,13 @@ public class BlockRedstoneEvent extends Event {
     */
     private int old;
     private int current;
-    
+
     public BlockRedstonevent(Block block, int old, int current) {
         this.block = block;
         this.old = old;
         this.current = current;
     }
+
     /* 18/09/2015 Tschallacka function getnewcurrent as 
         net.minecraft.server.BlockButtonAbstract line 155
         calls this to test if the redstone current is bigger
@@ -40,5 +42,4 @@ public class BlockRedstoneEvent extends Event {
             {
             return 0;
             }
-    
 }

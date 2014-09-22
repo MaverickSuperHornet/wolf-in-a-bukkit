@@ -13,10 +13,9 @@ package org.bukkit.event.entity;
         spawn event because its referenced as a member
         from CreatureSpawnEvent by biometheenddecorator. Noticed because the variable 
         name started with uppercase. Deleted extra file */
+public class CreatureSpawnEvent extends Event {
 
-public class CreatureSpawnEvent extends Event
-    {
     public enum SpawnReason {
         CHUNK_GEN;
-    }       
+    }
 }
