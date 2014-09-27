@@ -12,6 +12,8 @@ public enum Achievement {
 	OPEN_INVENTORY(null),
 	
 	MINE_WOOD(OPEN_INVENTORY);
+	BUILD_WORKBENCH(MINE_WOOD);
+	
 	
 	
 	
