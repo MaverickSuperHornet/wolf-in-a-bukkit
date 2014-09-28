@@ -19,7 +19,61 @@ public enum ChatColor {
 
     /* Dark Blue */
     DARK_BLUE('1', 0x1),
-
+    
+    /* Dark Green */
+    DARK_GREEN('2', 0x2),
+    
+    /* Dark Aqua */
+    DARK_AQUA('3', 0x3),
+    
+    /* Dark Red */
+    DARK_RED('4', 0x4),
+    
+    /* Dark Purple */
+    DARK_PURPLE('5', 0x5),
+    
+    /* Gold */
+    GOLD('6', 0x6),
+    
+    /* Gray */
+    GRAY('7', 0x7),
+    
+    /* Dark Gray */
+    DARK_GRAY('8', 0x8),
+    
+    /* Blue */
+    BLUE('9', 0x9),
+    
+    /* Green */
+    GREEN('a', 0xA),
+    
+    /* Aqua */
+    AQUA('b', 0xB),
+    
+    /* Red */
+    RED('c', 0xC),
+    
+    /* Light Purple */
+    LIGHT_PURPLE('d', 0xD),
+    
+    /* Yellow */
+    YELLOW('e', 0xE),
+    
+    /* White */
+    WHITE('f', 0xF),
+    
+    /* Magic */
+    MAGIC('k', 0x10, true),
+    
+    /* Bold */
+    BOLD('l', 0x11, true),
+    
+    /* StrikeThrough */
+    STRIKETHROUGH('m', 0x12, true),
+    
+    /* Italic */
+    ITALIC('o', 0x14, true),
+    
     /* Reset */
     RESET('r', 0x15);
 
