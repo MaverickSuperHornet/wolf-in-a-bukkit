@@ -78,9 +78,7 @@ public enum ChatColor {
     RESET('r', 0x15);
 
     private char    charCode;
-    private int     decAsciiCode;
     private boolean isFormat;
-    private String                               strOfChar;
 
     static final char                            COLOR_CHAR = '\u00A7';
     
@@ -92,7 +90,6 @@ public enum ChatColor {
 
     private ChatColor(char charCode, int decAsciiCode, boolean isformatValue) {
         this.charCode = charCode;
-        this.decAsciiCode = decAsciiCode;
         this.isFormat = isformatValue;
     }
 
