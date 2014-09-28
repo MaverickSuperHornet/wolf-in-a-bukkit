@@ -23,7 +23,7 @@ public class BlockRedstoneEvent extends Event {
     private int old;
     private int current;
 
-    public BlockRedstonevent(Block block, int old, int current) {
+    public BlockRedstoneEvent(Block block, int old, int current) {
         this.block = block;
         this.old = old;
         this.current = current;
